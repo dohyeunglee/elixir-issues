@@ -10,7 +10,7 @@ defmodule Issues.MixProject do
       name: "Issues",
       start_permanent: Mix.env() == :prod,
       build_embedded: Mix.env() == :prod,
-      source_url: "https://github.com/dohyeunglee/elixir-issues"
+      source_url: "https://github.com/dohyeunglee/elixir-issues",
       deps: deps()
     ]
   end
@@ -29,8 +29,8 @@ defmodule Issues.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
       { :httpoison, "~> 0.9" },
       { :poison, "~> 2.2" },
-      { :ex_doc, "~> 0,12" },
-      { :earmark: "~> 1.0", override: true }
+      { :ex_doc, "~> 0.12" },
+      { :earmark, "~> 1.0", override: true }
     ]
   end
 
